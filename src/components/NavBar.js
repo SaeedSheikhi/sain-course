@@ -41,6 +41,18 @@ class NavBar extends Component {
         >
           Converter
         </button>
+
+        <button
+          className={classnames("btn", {
+            "btn-primary": currentPage === "applications",
+            "btn-outline-primary": currentPage !== "applications"
+          })}
+          onClick={() => {
+            handlePageChange("applications");
+          }}
+        >
+          Applications
+        </button>
         <button
           className={classnames("btn", {
             "btn-primary": currentPage === "alaki",
